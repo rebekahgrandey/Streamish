@@ -9,5 +9,7 @@ namespace Streamish.Repositories
         void Delete(int id);
         List<UserProfile> GetAll();
         void Update(UserProfile userProfile);
+        public UserProfile GetUserProfileByIdWithVideos(int id);
+
     }
 }
