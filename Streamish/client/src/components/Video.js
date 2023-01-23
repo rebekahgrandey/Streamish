@@ -24,7 +24,7 @@ const Video = ({ video }) => {
                     ? <CardFooter>
                         <h3>Comments</h3>
                         <div>
-                            {video.comments.map(c => <Comment comment={c} key={`comment--${video.id}--${c.id}`} />)}
+                            {video.comments.map(comment => <Comment comment={comment} key={`comment--${video.id}--${comment.id}`} />)}
                         </div>
                     </CardFooter>
                     : <h5>No comments to see here...</h5>
